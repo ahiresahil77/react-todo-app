@@ -1,0 +1,125 @@
+
+/* Main page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f5;
+  color: #24352b;
+}
+
+/* App layout */
+.todo-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.todo-container h1 {
+  text-align: center;
+  color: #246b4b;
+}
+
+/* Input */
+.todo-container input {
+  width: 65%;
+  padding: 12px;
+  border: 1px solid #cbd5ce;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.todo-container button {
+  padding: 10px 14px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: #287750;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.todo-container button:hover {
+  background-color: #1d5c3b;
+}
+
+/* Task list */
+.todo-container li {
+  margin: 12px 0;
+  padding: 12px;
+  background-color: #f4f7f5;
+  border-radius: 8px;
+  list-style-position: inside;
+  overflow-wrap: anywhere;
+}
+
+/* Smaller screens */
+@media (max-width: 650px) {
+  .todo-container {
+    margin: 20px 12px;
+    padding: 18px;
+  }
+
+  .todo-container input {
+    width: 100%;
+  }
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.task-item span {
+  flex: 1;
+  min-width: 100px;
+}
+
+.task-item button {
+  margin: 2px;
+}
+/* Input and Add button layout */
+.todo-input {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  min-width: 0;
+}
+
+.todo-input button {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.empty-message {
+  text-align: center;
+  color: #6b7c72;
+  background-color: #f4f7f5;
+  padding: 25px 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.todo-container button.active-filter {
+  background-color: #f0b429;
+  color: #24352b;
+  font-weight: bold;
+}
+
+.todo-container button.active-filter:hover {
+  background-color: #dfa51b;
+}
